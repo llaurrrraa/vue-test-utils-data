@@ -131,7 +131,7 @@ layoutClass: gap-4
 
 ▎　BoxData.spec.js 
 
-```js {all}{lines:true}
+```js {6-17}{lines:true}
 import { mount } from "@vue/test-utils";
 import CountList from "@/components/CountList";
 import { ref } from "vue";
@@ -195,7 +195,7 @@ a div p {
 
 <br/>
 
-```js {all}{lines:true}
+```js {7-8}{lines:true}
 import { mount } from "@vue/test-utils";
 import BoxData from "@/components/BoxData";
 
@@ -212,7 +212,6 @@ describe("BoxData.vue", () => {
 
 - setData 是非同步的，記得加 `async`, `await`
 - setData 尚未支援 vue3 的 composition-api
-- 如果要用 composition-api，要用上一張的覆蓋方法
 
 <style>
 .footnotes-sep {
@@ -244,7 +243,7 @@ level: 2
 
 <br/>
 
-```js {all}{line: true}
+```js {7}{line: true}
 import { shallowMount } from "@vue/test-utils";
 import AddCount from "@/components/AddCount";
 
@@ -274,7 +273,7 @@ describe("AddCount.vue", () => {
 
 <br/>
 
-```js {all}{lines: true}
+```js {7}{lines: true}
 import { mount } from "@vue/test-utils";
 import ContentBox from "@/components/ContentBox";
 
@@ -309,7 +308,7 @@ describe("ContentBox.vue", () => {
 
 <br/>
 
-```js {all}{lines: true}
+```js {7-11}{lines: true}
 import { mount } from "@vue/test-utils";
 import InputBar from "@/components/InputBar";
 

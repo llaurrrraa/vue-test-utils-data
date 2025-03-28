@@ -1,0 +1,173 @@
+
+.dark .slidev-slide-content {
+  background-color: #1100ff !important;
+}
+.light .slidev-slide-content {
+  background-color: #ef8585 !important;
+  
+}
+.dark .slidev-layout {
+  background-image: 
+    radial-gradient(closest-side, rgb(255, 120, 135), rgba(235, 105, 78, 0)), 
+    radial-gradient(closest-side, rgb(8, 55, 209), rgba(243, 11, 164, 0)), 
+    radial-gradient(closest-side, rgb(144, 249, 209), rgba(254, 234, 131, 0)), 
+    radial-gradient(closest-side, rgb(153, 119, 247), rgba(170, 142, 245, 0)), 
+    radial-gradient(closest-side, rgb(55, 222, 255), rgba(248, 192, 147, 0));
+}
+
+.slidev-layout {
+  background-image: 
+    radial-gradient(closest-side, rgb(255, 255, 255), rgba(235, 105, 78, 0)), 
+    radial-gradient(closest-side, rgb(211, 225, 238), rgba(243, 11, 164, 0)), 
+    radial-gradient(closest-side, rgb(236, 222, 153), rgba(254, 234, 131, 0)), 
+    radial-gradient(closest-side, rgb(190, 170, 243), rgba(170, 142, 245, 0)), 
+    radial-gradient(closest-side, rgb(255, 237, 223), rgba(248, 192, 147, 0));
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+  animation: 10s movement linear infinite;
+}
+
+.slidev-layout a:hover {
+  color: #000;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 0.125rem 0.25rem;
+  transition-duration: 0.25s;
+}
+
+@keyframes movement {
+  0%, 100% {
+    background-size:
+      130vmax 130vmax,
+      80vmax 80vmax,
+      90vmax 90vmax,
+      110vmax 110vmax,
+      90vmax 90vmax;
+    background-position:
+      -80vmax -80vmax,
+      60vmax -30vmax,
+      10vmax 10vmax,
+      -30vmax -10vmax,
+      50vmax 50vmax;
+  }
+  25% {
+    background-size:
+      100vmax 100vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      60vmax 60vmax;
+    background-position:
+      -60vmax -90vmax,
+      50vmax -40vmax,
+      0vmax -20vmax,
+      -40vmax -20vmax,
+      40vmax 60vmax;
+  }
+  50% {
+    background-size:
+      80vmax 80vmax,
+      110vmax 110vmax,
+      100vmax 100vmax,
+      80vmax 80vmax,
+      50vmax 50vmax;
+    background-position:
+      -50vmax -90vmax,
+      40vmax -40vmax,
+      0vmax -10vmax,
+      -30vmax -10vmax,
+      50vmax 70vmax;
+  }
+  75% {
+    background-size:
+      90vmax 90vmax,
+      90vmax 90vmax,
+      100vmax 100vmax,
+      90vmax 90vmax,
+      70vmax 70vmax;
+    background-position:
+      -50vmax -40vmax,
+      50vmax -40vmax,
+      0vmax -20vmax,
+      -40vmax -20vmax,
+      40vmax 60vmax;
+  }
+}
+
+h1 {
+  color: #000;
+  font-size: 2.25rem !important;
+  font-weight: bold;
+}
+.dark h1 {
+  color: #fff;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.525rem !important;
+}
+
+kbd {
+  border-color: rgb(255 255 255 / 40%) !important;
+  font-weight: normal !important;
+  background-color: rgb(255 255 255 / 30%) !important;
+}
+
+p {
+  color:rgb(82, 80, 85);
+  letter-spacing: 0.05em
+}
+
+.light p {
+  color:rgb(61, 74, 97);
+  letter-spacing: 0.05em
+}
+
+.light ol li a p {
+  color: #000 !important;
+}
+
+ol li {
+  margin: 2.5px 0 ;
+}
+
+.dark ol li a p:hover {
+  color: #000;
+}
+
+.dark p {
+  color:rgb(255, 255, 255);
+}
+
+th {
+  background-color: rgba(255,255,255, 0.25);
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+td {
+  font-size: 1rem;
+  letter-spacing: 0.65px;
+}
+
+.theme-light .mermaid {
+  --color-red: #ff7777;
+  --color-orange: #ffbb99;
+  --color-yellow: #ffeeaa;
+  --color-green: #bbffbb;
+  --color-cyan: #bbffee;
+  --color-blue: #aaccff;
+  --color-purple: #ddbbff;
+  --color-pink: #ffcccc; 
+}
